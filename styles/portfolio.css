@@ -82,6 +82,7 @@ nav li {
     color: #FD6E0A;
     border: 1px solid #FD6E0A;
     border-radius: 5px;
+    margin-top: 5px;
 
 
 }
@@ -255,4 +256,56 @@ textarea {
 
 .contact a {
     text-decoration: none;
+}
+/* responsive style */
+@media screen  and (max-width:576px){
+    .header{
+        background-image:none ;
+    }
+    
+    nav,.banner,.skill-container,.resume-content, .about-info-container,.contact {
+        flex-direction: column;
+        gap:4px;
+        padding: 10px 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner{
+        margin: 0 10px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    
+.about,.contact{
+    padding: 20px;
+}
+.contact input,
+textarea{
+    padding:0 0 0 5px;
+}
+    
+}
+@media screen and (min-width:577px) and (max-width:992px){
+    .skill-container,.resume-content, .about-info-container,.contact {
+        flex-direction: column;
+        gap:4px;
+        padding: 10px 20px;
+    }
+    .about,.contact{
+        padding: 20px;
+        gap: 10px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact input,
+textarea{
+    padding:0 0 0 5px;
+}
+}
+.hide{
+    display:none;
 }
